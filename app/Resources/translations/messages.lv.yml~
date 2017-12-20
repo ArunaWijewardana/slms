@@ -1,0 +1,101 @@
+'Smart Library Management System': Viedā bibliotēkas vadības sistēma
+Home: Mājas
+Lending: Kreditēšana
+Payments: Maksājumi
+Books: Grāmatas
+Users: Lietotāji
+Settings: Iestatījumi
+Search: Meklēt
+Logout: Izlogoties
+New Lending: Jauna kreditēšana
+New Payment: Jauns maksājums
+Payment Categories: Maksājumu kategorijas
+New Payment Category: Jauna maksājuma kategorija
+New Book: Jauna grāmata
+Book Categories: Grāmatu kategorijas
+New Book Category: Jauna grāmatas kategorija
+New User: Jauns lietotājs
+User Categories: Lietotāju kategorijas
+New User Category: Jauna lietotāja kategorija
+All rights reserved @ Riga Library.: Visas tiesības aizsargātas @ Rīgas bibliotēka.
+Powered by CoDE PLC &copy 2017: Powered by CoDE PLC &copy 2017
+Book edit: Grāmatu rediģēšana
+Back to the list: Atpakaļ uz sarakstu
+Delete: Dzēst
+Edit: Rediģēt
+Create a new Book: Izveidojiet jaunu grāmatu
+Id: Id
+Title: Nosaukums
+Author: Autors
+Publishing Year: Izdošanas gads
+Publishing Place: Izdevniecības vieta
+Quantity: Daudzums
+Actions: Darbības
+View: Skats
+Add New Book: Pievienot jaunu grāmatu
+Create: Izveidot
+Book: Grāmatu
+Category: Kategorija
+Description: Apraksts
+Status: Statuss
+Created at: Izveidots pie
+Modified at: Modificēts pie
+Edit Book Category: Rediģēt grāmatu kategoriju
+Create a new Book Category: Izveidojiet jaunu grāmatu kategoriju
+Create Book Category: Izveidot grāmatu kategoriju
+Book Category: Grāmatu kategorija
+Welcome to Smart Library Management System (SLMS): Laipni lūdzam Smart Library vadības sistēmā (SLMS)
+Issue books to users: Izsniedziet lietotājiem grāmatas
+Manage Payments: Pārvaldīt maksājumus
+Book Management: Grāmatvedība
+User Management: Lietotāju pārvaldība
+Select your preferences: Atlasiet savas preferences
+Edit Lent: Rediģēt aizdot
+Lending List: Aizdevumu saraksts
+Lend a book: Aizdod grāmatu
+To: Uz
+Lent on: Pavadīts
+Due on: Sakarā ar
+Returned On: Atgriezās On
+New Lend: Jauna aizdare
+Lent to: Pavadīts
+Due Date: Gala termiņš
+Returned on: Atgriezās
+Payment Edit: Maksājuma rediģēšana
+Make a new Payment: Veikt jaunu maksājumu
+Payment: Maksājums
+Payment Category: Maksājumu kategorija
+User: Lietotājs
+Amount: Summa
+Payment Date: Maksājuma datums
+Created At: Izveidots pie
+Modified At: Modificēts pie
+Payment Category Edit: Maksājumu kategorijas rediģēšana
+Create a new Payment Category: Izveidojiet jaunu maksājumu kategoriju
+Create Payment Category: Izveidot maksājumu kategoriju
+Books by Title: Grāmatas pēc nosaukuma
+Books by Author: Grāmatas pēc autora
+Users by First Name: Lietotāji pēc vārda
+Full Name: Pilnais vārds
+Email: E-pasts
+Personnel Code: Personāla kods
+City: Pilsēta
+Users by Last Name: Lietotāji pēc uzvārda
+Username: Lietotājvārds
+Password: Parole
+Login: Pieslēgties
+Select Language: Izvēlēties valodu
+Submit: Iesniegt
+User edit: Lietotāja rediģēšana
+Add an User: Pievienot lietotāju
+User Category: Lietotāja kategorija
+First Name: Vārds
+Last Name: Uzvārds
+Address line 1: 1. adrešu rinda
+Address line 2: 2. adrešu līnija
+Zip Code: Pasta indekss
+Phone: Tālrunis
+Date of Birth: Dzimšanas datums
+Edit User Category: Rediģēt lietotāju kategoriju
+Create a new User Category: Izveidojiet jaunu lietotāju kategoriju
+Create an User Category: Izveidojiet lietotāju kategoriju

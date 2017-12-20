@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}SLMS{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('bundles/app/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('bundles/app/css/dashboard.css') }}" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/dashboard/{{ request.getLocale }}">{{ 'Smart Library Management System'|trans }}</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard/{{ request.getLocale }}">{{ 'Home'|trans }} <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lending/{{ request.getLocale }}">{{ 'Lending'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/payment/{{ request.getLocale }}">{{ 'Payments'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/book/{{ request.getLocale }}">{{ 'Books'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/{{ request.getLocale }}">{{ 'Users'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings/{{ request.getLocale }}">{{ 'Settings'|trans }}</a>
+                </li>
+            </ul>
+            <form action="{{ path('search') }}" class="form-inline mt-2 mt-md-0" method="post">
+                <input name="search" class="form-control mr-sm-2" type="text" placeholder="{{ 'Search'|trans }}" aria-label="Search">
+                <a href="{{ path('search') }}"><button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">{{ 'Search'|trans }}</button></a>
+                <a href="{{ path('logout') }}"><button class="btn btn-outline-danger  my-2 my-sm-0" type="button">{{ 'Logout'|trans }}</button><a/>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/lending/{{ request.getLocale }}">{{ 'Lending'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lending/{{ request.getLocale }}/new">{{ 'New Lending'|trans }}</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/payment/{{ request.getLocale }}">{{ 'Payments'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/payment/{{ request.getLocale }}/new">{{ 'New Payment'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paymentcategory/{{ request.getLocale }}">{{ 'Payment Categories'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paymentcategory/{{ request.getLocale }}/new">{{ 'New Payment Category'|trans }}</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/book/{{ request.getLocale }}">{{ 'Books'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/book/{{ request.getLocale }}/new">{{ 'New Book'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bookcategory/{{ request.getLocale }}">{{ 'Book Categories'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bookcategory/{{ request.getLocale }}/new">{{ 'New Book Category'|trans }}</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/{{ request.getLocale }}">{{ 'Users'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/{{ request.getLocale }}/new">{{ 'New User'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/usercategory/{{ request.getLocale }}">{{ 'User Categories'|trans }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/usercategory/{{ request.getLocale }}/new">{{ 'New User Category'|trans }}</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings/{{ request.getLocale }}">{{ 'Settings'|trans }}</a>
+                </li>
+            </ul>
+        </nav>
+        {% include 'header.html.twig' %}
+        {% block body %}{% endblock %}
+        {% include 'footer.html.twig' %}
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('bundles/app/js/jquery-3.2.1.slim.min.js') }}"></script>
+{#<script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>#}
+<script src="{{ asset('bundles/app/js/popper.min.js') }}"></script>
+<script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

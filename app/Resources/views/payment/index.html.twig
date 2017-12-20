@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Payments'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('payment_new') }}" class="btn btn-success">{{ 'Make a new Payment'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>{{ 'Id'|trans }}</th>
+                <th>{{ 'Title'|trans }}</th>
+                <th>{{ 'Type'|trans }}</th>
+                <th>{{ 'User'|trans }}</th>
+                <th>{{ 'Amount'|trans }}</th>
+                <th>{{ 'Payment Date'|trans }}</th>
+                <th>{{ 'Due Date'|trans }}</th>
+                <th>{{ 'Status'|trans }}</th>
+                <th>{{ 'Actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for payment in payments %}
+            <tr>
+                <td><a href="{{ path('payment_show', { 'id': payment.id }) }}">{{ payment.id }}</a></td>
+                <td>{{ payment.title }}</td>
+                <td>{{ payment.paymentCategory.title }}</td>
+                <td>{{ payment.user.fullName }}</td>
+                <td>{{ payment.amount }}</td>
+                <td>{{ payment.paymentDate|date('Y-m-d') }}</td>
+                <td>{% if payment.dueDate %}{{ payment.dueDate|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ payment.status }}</td>
+                <td>
+                    <a href="{{ path('payment_show', { 'id': payment.id }) }}" class="btn btn-success">{{ 'View'|trans }}</a>
+                    <a href="{{ path('payment_edit', { 'id': payment.id }) }}" class="btn btn-secondary">{{ 'Edit'|trans }}</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

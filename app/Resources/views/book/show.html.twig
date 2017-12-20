@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Book'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('book_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+        <a href="{{ path('book_edit', { 'id': book.id }) }}" class="btn btn-success">{{ 'Edit'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <tbody>
+            <tr>
+                <th class="text-right">{{ 'Id'|trans }}</th>
+                <td>{{ book.id }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Title'|trans }}</th>
+                <td>{{ book.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Category'|trans }}</th>
+                <td>{{ book.bookCategory.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Author'|trans }}</th>
+                <td>{{ book.author }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Publishing Year'|trans }}</th>
+                <td>{% if book.publishingYear %}{{ book.publishingYear|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Publishing Place'|trans }}</th>
+                <td>{{ book.publishingPlace }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Quantity'|trans }}</th>
+                <td>{{ book.quantity }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Description'|trans }}</th>
+                <td>{{ book.description }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Status'|trans }}</th>
+                <td>{{ book.status }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Created at'|trans }}</th>
+                <td>{{ book.createdAt|date }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Modified at'|trans }}</th>
+                <td>{{ book.modifiedAt|date }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        {{ form_start(delete_form) }}
+            <input type="submit" value="{{ 'Delete'|trans }}" class="btn btn-danger">
+        {{ form_end(delete_form) }}
+    </ul>
+{% endblock %}

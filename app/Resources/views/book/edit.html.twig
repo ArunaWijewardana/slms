@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Book edit'|trans }}</h1>
+
+    <table>
+        <tr>
+            <td>
+                <a href="{{ path('book_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+            </td>
+            <td>
+                {{ form_start(delete_form) }}
+                <input type="submit" value="{{ 'Delete'|trans }}" class="btn btn-danger">
+                {{ form_end(delete_form) }}
+            </td>
+        </tr>
+    </table>
+
+    {{ form_start(edit_form) }}
+        {{ form_widget(edit_form) }}
+        <input type="submit" value="{{ 'Edit'|trans }}" class="form-control btn btn-success" />
+    {{ form_end(edit_form) }}
+{% endblock %}

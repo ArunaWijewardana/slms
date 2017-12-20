@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Payment'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('payment_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+        <a href="{{ path('payment_edit', { 'id': payment.id }) }}" class="btn btn-success">{{ 'Edit'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <tbody>
+            <tr>
+                <th class="text-right">{{ 'Id'|trans }}</th>
+                <td>{{ payment.id }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Title'|trans }}</th>
+                <td>{{ payment.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Payment Category'|trans }}</th>
+                <td>{{ payment.paymentCategory.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'User'|trans }}</th>
+                <td>{{ payment.user.fullName }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Amount'|trans }}</th>
+                <td>{{ payment.amount }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Payment Date'|trans }}</th>
+                <td>{{ payment.paymentDate|date('Y-m-d') }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Due Date'|trans }}</th>
+                <td>{% if payment.dueDate %}{{ payment.dueDate|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Description'|trans }}</th>
+                <td>{{ payment.description }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Status'|trans }}</th>
+                <td>{{ payment.status }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Created At'|trans }}</th>
+                <td>{{ payment.createdAt|date }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Modified At'|trans }}</th>
+                <td>{{ payment.modifiedAt|date }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        {{ form_start(delete_form) }}
+            <input type="submit" value="{{ 'Delete'|trans }}" class="btn btn-danger">
+        {{ form_end(delete_form) }}
+    </ul>
+{% endblock %}

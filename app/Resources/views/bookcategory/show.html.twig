@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Book Category'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('bookcategory_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+        <a href="{{ path('bookcategory_edit', { 'id': bookCategory.id }) }}" class="btn btn-success">{{ 'Edit'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <tbody>
+            <tr>
+                <th class="text-right">{{ 'Id'|trans }}</th>
+                <td>{{ bookCategory.id }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Title'|trans }}</th>
+                <td>{{ bookCategory.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Description'|trans }}</th>
+                <td>{{ bookCategory.description }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Status'|trans }}</th>
+                <td>{{ bookCategory.status }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Created at'|trans }}</th>
+                <td>{{ bookCategory.createdAt|date }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Modified at'|trans }}</th>
+                <td>{{ bookCategory.modifiedAt|date }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        {{ form_start(delete_form) }}
+            <input type="submit" value="{{ 'Delete'|trans }}" class="btn btn-danger">
+        {{ form_end(delete_form) }}
+    </ul>
+{% endblock %}

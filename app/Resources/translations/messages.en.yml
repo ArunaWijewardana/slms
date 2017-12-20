@@ -1,0 +1,102 @@
+'Smart Library Management System': 'Smart Library Management System'
+Home: Home
+Lending: Lending
+Payments: Payments
+Books: Books
+Users: Users
+Settings: Settings
+Search: Search
+Logout: Logout
+'New Lending': 'New Lending'
+'New Payment': 'New Payment'
+'Payment Categories': 'Payment Categories'
+'New Payment Category': 'New Payment Category'
+'New Book': 'New Book'
+'Book Categories': 'Book Categories'
+'New Book Category': 'New Book Category'
+'New User': 'New User'
+'User Categories': 'User Categories'
+'New User Category': 'New User Category'
+'All rights reserved @ Riga Library.': 'All rights reserved @ Riga Library.'
+'Powered by CoDE PLC &copy 2017': 'Powered by CoDE PLC &copy 2017'
+'Book edit': 'Book edit'
+'Back to the list': 'Back to the list'
+Delete: Delete
+Edit: Edit
+'Create a new Book': 'Create a new Book'
+Id: Id
+Title: Title
+Author: Author
+'Publishing Year': 'Publishing Year'
+'Publishing Place': 'Publishing Place'
+Quantity: Quantity
+Actions: Actions
+View: View
+'Add New Book': 'Add New Book'
+Create: Create
+Book: Book
+Category: Category
+Description: Description
+Status: Status
+'Created at': 'Created at'
+'Modified at': 'Modified at'
+'Edit Book Category': 'Edit Book Category'
+'Create a new Book Category': 'Create a new Book Category'
+'Create Book Category': 'Create Book Category'
+'Book Category': 'Book Category'
+'Welcome to Smart Library Management System (SLMS)': 'Welcome to Smart Library Management System (SLMS)'
+'Issue books to users': 'Issue books to users'
+'Manage Payments': 'Manage Payments'
+'Book Management': 'Book Management'
+'User Management': 'User Management'
+'Select your preferences': 'Select your preferences'
+'Edit Lent': 'Edit Lent'
+'Lending List': 'Lending List'
+'Lend a book': 'Lend a book'
+To: To
+'Lent on': 'Lent on'
+'Due on': 'Due on'
+'Returned On': 'Returned On'
+'New Lend': 'New Lend'
+'Lent to': 'Lent to'
+'Due Date': 'Due Date'
+'Returned on': 'Returned on'
+'Payment Edit': 'Payment Edit'
+'Make a new Payment': 'Make a new Payment'
+Payment: Payment
+'Payment Category': 'Payment Category'
+User: User
+Amount: Amount
+'Payment Date': 'Payment Date'
+'Created At': 'Created At'
+'Modified At': 'Modified At'
+'Payment Category Edit': 'Payment Category Edit'
+'Create a new Payment Category': 'Create a new Payment Category'
+'Create Payment Category': 'Create Payment Category'
+'Books by Title': 'Books by Title'
+'Books by Author': 'Books by Author'
+'Users by First Name': 'Users by First Name'
+'Full Name': 'Full Name'
+Email: Email
+'Personnel Code': 'Personnel Code'
+City: City
+'Users by Last Name': 'Users by Last Name'
+Username: Username
+Password: Password
+Login: Login
+'Select Language': 'Select Language'
+Submit: Submit
+'User edit': 'User edit'
+'Add an User': 'Add an User'
+'User Category': 'User Category'
+'First Name': 'First Name'
+'Last Name': 'Last Name'
+'Address line 1': 'Address line 1'
+'Address line 2': 'Address line 2'
+'Zip Code': 'Zip Code'
+Phone: Phone
+'Date of Birth': 'Date of Birth'
+'Edit User Category': 'Edit User Category'
+'Create a new User Category': 'Create a new User Category'
+'Create an User Category': 'Create an User Category'
+Type: __Type

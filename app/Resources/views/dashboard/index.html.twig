@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Welcome to Smart Library Management System (SLMS)'|trans }}</h1>
+
+    <section class="row text-center placeholders">
+        <div class="col-6 col-sm-3 placeholder">
+            <a href="/lending/{{ request.getLocale }}">
+                <img src="{{ asset('bundles/app/images/lendingList.png') }}" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>{{ 'Lending'|trans }}</h4>
+                <div class="text-muted">{{ 'Issue books to users'|trans }}</div>
+            </a>
+        </div>
+        <div class="col-6 col-sm-3 placeholder">
+            <a href="/payment/{{ request.getLocale }}">
+                <img src="{{ asset('bundles/app/images/paymentList.png') }}" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>{{ 'Payments'|trans }}</h4>
+                <span class="text-muted">{{ 'Manage Payments'|trans }}</span>
+            </a>
+        </div>
+        <div class="col-6 col-sm-3 placeholder">
+            <a href="/book/{{ request.getLocale }}">
+                <img src="{{ asset('bundles/app/images/bookList.png') }}" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>{{ 'Books'|trans }}</h4>
+                <span class="text-muted">{{ 'Book Management'|trans }}</span>
+            </a>
+        </div>
+        <div class="col-6 col-sm-3 placeholder">
+            <a href="/user/{{ request.getLocale }}">
+                <img src="{{ asset('bundles/app/images/userList.png') }}" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>{{ 'Users'|trans }}</h4>
+                <span class="text-muted">{{ 'User Management'|trans }}</span>
+            </a>
+        </div>
+        <div class="col-6 col-sm-3 placeholder">
+            <a href="/settings/{{ request.getLocale }}">
+                <img src="{{ asset('bundles/app/images/settings.png') }}" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>{{ 'Settings'|trans }}</h4>
+                <span class="text-muted">{{ 'Select your preferences'|trans }}</span>
+            </a>
+        </div>
+    </section>
+{% endblock %}

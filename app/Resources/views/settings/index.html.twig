@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Settings'|trans }}</h1>
+
+    <form target="_self" method="get">
+        <table class="table table-dark">
+            <tr>
+                <td class="text-right">
+                    {{ 'Select Language'|trans }}
+                </td>
+                <td>
+                    <select class="form-control" name="locale" title="locale" id="locale">
+                        <option value="{{ request.getLocale }}">{{ request.getLocale }}</option>
+                        <option value="en">English</option>
+                        <option value="lv">Latviešu</option>
+                        <option value="ru">русский</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="{{ 'Submit'|trans }}" class="form-control btn-success" />
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}

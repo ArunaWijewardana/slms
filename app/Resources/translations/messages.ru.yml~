@@ -1,0 +1,101 @@
+'Smart Library Management System': Система управления интеллектуальной библиотекой
+Home: Главная
+Lending: кредитование
+Payments: платежи
+Books: книги
+Users: пользователей
+Settings: настройки
+Search: Поиск
+Logout: Выйти
+New Lending: Новое кредитование
+New Payment: Новый платеж
+Payment Categories: Категории платежей
+New Payment Category: Новая категория платежей
+New Book: Новая книга
+Book Categories: Категории книг
+New Book Category: Новая категория книг
+New User: Новый пользователь
+User Categories: Категории пользователей
+New User Category: Новая категория пользователей
+All rights reserved @ Riga Library.: Все права защищены @ Рижская библиотека.
+Powered by CoDE PLC &copy 2017: Работает на CoDE PLC и копия 2017
+Book edit: Редактирование книги
+Back to the list: Вернуться к списку
+Delete: Удалить
+Edit: редактировать
+Create a new Book: Создать новую книгу
+Id: Я бы
+Title: заглавие
+Author: автор
+Publishing Year: Год издания
+Publishing Place: Место публикации
+Quantity: Количество
+Actions: действия
+View: Посмотреть
+Add New Book: Добавить новую книгу
+Create: Создайте
+Book: Книга
+Category: категория
+Description: Описание
+Status: Положение дел
+Created at: Создан в
+Modified at: Изменено на
+Edit Book Category: Изменить категорию книг
+Create a new Book Category: Создать новую категорию книг
+Create Book Category: Создать категорию книги
+Book Category: Категория книги
+Welcome to Smart Library Management System (SLMS): Добро пожаловать в систему управления Smart Library (SLMS)
+Issue books to users: Выдавать книги пользователям
+Manage Payments: Управление платежами
+Book Management: Управление книгами
+User Management: Управление пользователями
+Select your preferences: Выберите свои предпочтения
+Edit Lent: Редактировать пост
+Lending List: Список кредитования
+Lend a book: Одолжите книгу
+To: к
+Lent on: Пост
+Due on: Выполнить к
+Returned On: Возвращается на
+New Lend: Новый Ленд
+Lent to: Пост
+Due Date: Срок
+Returned on: Возвращение
+Payment Edit: Изменить платеж
+Make a new Payment: Сделать новый платеж
+Payment: Оплата
+Payment Category: Категория оплаты
+User: пользователь
+Amount: Количество
+Payment Date: Дата платежа
+Created At: Создан в
+Modified At: Изменено в
+Payment Category Edit: Категория оплаты
+Create a new Payment Category: Создать новую категорию платежей
+Create Payment Category: Create Payment Category
+Books by Title: Книги по названию
+Books by Author: Книги автора
+Users by First Name: Пользователи по имени
+Full Name: Полное имя
+Email: Эл. адрес
+Personnel Code: Код персонала
+City: город
+Users by Last Name: Пользователи по имени
+Username: имя пользователя
+Password: пароль
+Login: Авторизоваться
+Select Language: Выберите язык
+Submit: Отправить
+User edit: Редактирование пользователя
+Add an User: Добавить пользователя
+User Category: Пользовательская категория
+First Name: Имя
+Last Name: Фамилия
+Address line 1: Адресная строка 1
+Address line 2: Адресная строка 2
+Zip Code: Почтовый Индекс
+Phone: Телефон
+Date of Birth: Дата рождения
+Edit User Category: Изменить категорию пользователей
+Create a new User Category: Создать новую категорию пользователей
+Create an User Category: Создать категорию пользователя

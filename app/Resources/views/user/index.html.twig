@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Users'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('user_new') }}" class="btn btn-success">{{ 'Add an User'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>{{ 'Id'|trans }}</th>
+                <th>{{ 'Full Name'|trans }}</th>
+                <th>{{ 'Email'|trans }}</th>
+                <th>{{ 'Personnel Code'|trans }}</th>
+                <th>{{ 'City'|trans }}</th>
+                <th>{{ 'Status'|trans }}</th>
+                <th>{{ 'Actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td><a href="{{ path('user_show', { 'id': user.id }) }}">{{ user.id }}</a></td>
+                <td>{{ user.fullName }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.identificationNumber }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.status }}</td>
+                <td>
+                    <a href="{{ path('user_show', { 'id': user.id }) }}" class="btn btn-success">{{ 'View'|trans }}</a>
+                    <a href="{{ path('user_edit', { 'id': user.id }) }}" class="btn btn-secondary">{{ 'Edit'|trans }}</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

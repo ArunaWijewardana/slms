@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Lending'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('lending_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+        <a href="{{ path('lending_edit', { 'id': lending.id }) }}" class="btn btn-success">{{ 'Edit'|trans }}</a>
+    </ul>
+
+    <table class="table table-striped table-dark">
+        <tbody>
+            <tr>
+                <th class="text-right">{{ 'Id'|trans }}</th>
+                <td>{{ lending.id }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Title'|trans }}</th>
+                <td>{{ lending.title }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Lent to'|trans }}</th>
+                <td>{{ lending.user.firstName }} {{ lending.user.lastName }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Book'|trans }}</th>
+                <td>{{ lending.book.title }} by {{ lending.book.author }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Lent on'|trans }}</th>
+                <td>{% if lending.lendingDate %}{{ lending.lendingDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Due Date'|trans }}</th>
+                <td>{% if lending.dueDate %}{{ lending.dueDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Returned on'|trans }}</th>
+                <td>{% if lending.returnDate %}{{ lending.returnDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Description'|trans }}</th>
+                <td>{{ lending.description }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Status'|trans }}</th>
+                <td>{{ lending.status }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Created at'|trans }}</th>
+                <td>{{ lending.createdAt|date }}</td>
+            </tr>
+            <tr>
+                <th class="text-right">{{ 'Modified at'|trans }}</th>
+                <td>{{ lending.modifiedAt|date }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        {{ form_start(delete_form) }}
+        <input type="submit" value="{{ 'Delete'|trans }}" class="btn btn-danger">
+        {{ form_end(delete_form) }}
+    </ul>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'Create an User Category'|trans }}</h1>
+
+    <ul>
+        <a href="{{ path('usercategory_index') }}" class="btn btn-secondary">{{ 'Back to the list'|trans }}</a>
+    </ul>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="{{ 'Create'|trans }}" class="form-control btn btn-success" />
+    {{ form_end(form) }}
+{% endblock %}
