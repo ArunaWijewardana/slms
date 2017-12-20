@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d22c68b-46bd-4681-9920-6267745e8397" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/lendingAdd.png" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bookCreate.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bookCreate.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bookList.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bookList.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/categoryCreate.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/categoryCreate.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/lendingAdd.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/lendingList.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/lendingList.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/paymentCreate.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/paymentCreate.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/paymentList.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/paymentList.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/settings.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/settings.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userCreate.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userCreate.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userList.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userList.png" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userTypeCreate.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/userTypeCreate.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,8 +48,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -309,12 +296,12 @@
       <workItem from="1513328907442" duration="14662000" />
       <workItem from="1513510209733" duration="40373000" />
       <workItem from="1513593787043" duration="181000" />
-      <workItem from="1513756413969" duration="3020000" />
+      <workItem from="1513756413969" duration="3550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201627000" />
+    <option name="totallyTimeSpent" value="202157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-156" y="-1088" width="1936" height="1066" extended-state="6" />
@@ -889,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
